@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2656FCA424DCEF4A00B21E26 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2656FCA324DCEF4A00B21E26 /* AppDelegate.swift */; };
 		2656FCA624DCEF4A00B21E26 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2656FCA524DCEF4A00B21E26 /* SceneDelegate.swift */; };
-		2656FCA824DCEF4A00B21E26 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2656FCA724DCEF4A00B21E26 /* ViewController.swift */; };
 		2656FCAB24DCEF4A00B21E26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2656FCA924DCEF4A00B21E26 /* Main.storyboard */; };
 		2656FCAD24DCEF4D00B21E26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2656FCAC24DCEF4D00B21E26 /* Assets.xcassets */; };
 		2656FCB024DCEF4D00B21E26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2656FCAE24DCEF4D00B21E26 /* LaunchScreen.storyboard */; };
@@ -19,11 +18,11 @@
 		2656FCA024DCEF4A00B21E26 /* lhySwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lhySwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2656FCA324DCEF4A00B21E26 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2656FCA524DCEF4A00B21E26 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2656FCA724DCEF4A00B21E26 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2656FCAA24DCEF4A00B21E26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2656FCAC24DCEF4D00B21E26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2656FCAF24DCEF4D00B21E26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2656FCB124DCEF4D00B21E26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2656FCB824DCF46100B21E26 /* lhySwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = lhySwift.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,23 +55,15 @@
 		2656FCA224DCEF4A00B21E26 /* lhySwift */ = {
 			isa = PBXGroup;
 			children = (
+				2656FCB824DCF46100B21E26 /* lhySwift.entitlements */,
 				2656FCA324DCEF4A00B21E26 /* AppDelegate.swift */,
 				2656FCA524DCEF4A00B21E26 /* SceneDelegate.swift */,
-				2656FCB724DCF2B800B21E26 /* New Group */,
-				2656FCA724DCEF4A00B21E26 /* ViewController.swift */,
 				2656FCA924DCEF4A00B21E26 /* Main.storyboard */,
 				2656FCAC24DCEF4D00B21E26 /* Assets.xcassets */,
 				2656FCAE24DCEF4D00B21E26 /* LaunchScreen.storyboard */,
 				2656FCB124DCEF4D00B21E26 /* Info.plist */,
 			);
 			path = lhySwift;
-			sourceTree = "<group>";
-		};
-		2656FCB724DCF2B800B21E26 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,7 +137,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2656FCA824DCEF4A00B21E26 /* ViewController.swift in Sources */,
 				2656FCA424DCEF4A00B21E26 /* AppDelegate.swift in Sources */,
 				2656FCA624DCEF4A00B21E26 /* SceneDelegate.swift in Sources */,
 			);
@@ -292,6 +282,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = lhySwift/lhySwift.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K5H89GK565;
 				INFOPLIST_FILE = lhySwift/Info.plist;
@@ -301,6 +292,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kdc.lhySwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -310,6 +302,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = lhySwift/lhySwift.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = K5H89GK565;
 				INFOPLIST_FILE = lhySwift/Info.plist;
@@ -319,6 +312,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kdc.lhySwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
